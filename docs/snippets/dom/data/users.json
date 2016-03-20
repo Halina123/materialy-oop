@@ -1,0 +1,23 @@
+[
+  {
+    "username": "nobody",
+    "name": "John",
+    "surname": "Doe",
+    "password": "very strong password"
+  },
+
+  {
+    "username": "singer",
+    "name": "Barbra",
+    "surname": "Streisand",
+    "password": "lalala"
+  },
+
+  {
+    "username": "the-agent",
+    "name": "James",
+    "surname": "Bond",
+    "alias": "Agent 007",
+    "password": "golden eye"
+  }
+]

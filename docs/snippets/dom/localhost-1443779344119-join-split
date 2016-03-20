@@ -1,0 +1,8 @@
+document.cookie
+"formInput_usernameValue=aasdf"
+[1, 2, 3].join('');
+"123"
+[1, 2, 3].join('-');
+"1-2-3"
+[1, 2, 3].join('-').split('-');
+["1", "2", "3"]

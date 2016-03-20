@@ -1,0 +1,32 @@
+var c 
+undefined
+c
+undefined
+function test(a, b) { var a; return a; }
+undefined
+test(2)
+2
+function test(a, b) { var a = 3; return a; }
+undefined
+test(2)
+3
+var d = 10;
+undefined
+function hokuspokus() { d = 10; var d = 5; return d; };
+undefined
+hokuspokus()
+5
+d
+10
+var d = 20;
+undefined
+hokuspokus()
+5
+d
+20
+function hokuspokus() { var d; d = 10; d = 5; return d; };
+undefined
+hokuspokus()
+5
+d
+20

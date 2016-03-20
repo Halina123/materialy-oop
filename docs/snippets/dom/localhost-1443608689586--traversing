@@ -1,0 +1,64 @@
+$('li');
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('li').child();
+Uncaught TypeError: $(...).child is not a function(…)
+$('li').children();
+[<small>​Wed, 30 Sep 2015 10:11:53 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​rampelys/​hollywood/​cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/​a/​23533732/​">​Crawford til modelldatter:&nbsp; - Jeg vil ha bena mine tilbake!​</a>​, <small>​Wed, 30 Sep 2015 10:40:50 +0200​</small>​, <a href=​"http:​/​/​e24.no/​bil/​volkswagen/​faerre-hestekrefter-kan-bli-loesningen-for-vws-skandalebiler/​23534039">​Dette kan bli løsningen for skandalebilene​</a>​, <small>​Wed, 30 Sep 2015 10:40:09 +0200​</small>​, <a href=​"http:​/​/​pluss.vg.no/​2015/​09/​29/​2165/​2165_23533343#xtor=CS1-1-23533343[Robins+nye+liv]​">​Fikk isblokk i hodet i 2010: Robins nye liv​</a>​, <small>​Wed, 30 Sep 2015 10:26:59 +0200​</small>​, <a href=​"http:​/​/​www.vgtv.no/​#!/​video/​118131/​larvesjokk-i-stabburets-picnic-skinke">​Kristian åpnet skinke: - Vi mistet matlysten​</a>​, <small>​Wed, 30 Sep 2015 11:52:17 +0200​</small>​, <a href=​"http:​/​/​www.minmote.no/​#!/​artikkel/​23532248/​hva-kom-foerst-trusa-eller-boksershortsen">​Menns undertøysmote gjennom tidene​</a>​, <small>​Wed, 30 Sep 2015 11:49:53 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​nyheter/​utenriks/​flyktningkrisen-i-europa/​hans-roslings-syria-tale-fikk-twitter-til-aa-koke/​a/​23533987/​">​Roslings Syria-tale fikk Twitter til å koke​</a>​, <small>​Wed, 30 Sep 2015 11:32:41 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​nyheter/​innenriks/​flyktningkrisen-i-europa/​slik-er-syria-flyktningenes-foerste-natt-i-norge/​a/​23533865/​">​Slik er Syria-flyktningenes første natt i Norge​</a>​, <small>​Wed, 30 Sep 2015 11:49:53 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​nyheter/​innenriks/​flyktningkrisen-i-europa/​barneombudet-slaar-alarm-om-asylbarnas-helse-en-akutt-krise/​a/​23534055/​">​Slår alarm om asylbarnas helse: - En akutt krise​</a>​, <small>​Wed, 30 Sep 2015 11:52:17 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​sport/​langrenn/​langrenn/​gulljentene-tok-med-seg-kjaerestene-paa-ekstra-hoeydeopphold/​a/​23533781/​">​Tok med seg kjærestene på ekstra høydeopphold​</a>​, <small>​Wed, 30 Sep 2015 10:34:05 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​a/​23534010/​">​VW tilbakekaller 147.139 biler i Norge Disse modellene er rammet​</a>​, <small>​occurrences: 412​</small>​, <small>​occurrences: 340​</small>​, <small>​occurrences: 169​</small>​, <small>​occurrences: 157​</small>​, <small>​occurrences: 120​</small>​, <small>​occurrences: 20​</small>​, <small>​occurrences: 19​</small>​, <small>​occurrences: 17​</small>​, <small>​occurrences: 14​</small>​, <small>​occurrences: 14​</small>​, <small>​2012-3-29 12:31​</small>​, <small>​2012-3-29 11:18​</small>​, <small>​2012-2-13 12:38​</small>​, <small>​2012-1-18 18:18​</small>​, <small>​2011-3-7 23:58​</small>​]
+$('li').first().children();
+[<small>​Wed, 30 Sep 2015 10:11:53 +0200​</small>​, <a href=​"http:​/​/​www.vg.no/​rampelys/​hollywood/​cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/​a/​23533732/​">​Crawford til modelldatter:&nbsp; - Jeg vil ha bena mine tilbake!​</a>​]
+$('ul')
+[<ul id=​"rss-feed">​…​</ul>​, <ul id=​"varnish-top-5-hosts">​…​</ul>​, <ul id=​"varnish-top-5-files">​…​</ul>​, <ul id=​"json-feed">​…​</ul>​]
+$('ul').first().children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').second().children()
+Uncaught TypeError: $(...).second is not a function(…)
+$('ul').nth(0).children()
+Uncaught TypeError: $(...).nth is not a function(…)
+$('ul').get(0).children()
+Uncaught TypeError: $(...).get(...).children is not a function(…)
+$('ul').nth(1).children()
+Uncaught TypeError: $(...).nth is not a function(…)
+$('ul').eq(0).children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(1).children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(1).children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(144).children()
+[]
+$('ul').eq(3).children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(3).children(4)
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(4).children()
+[]
+$('ul').eq(4).children()
+[]
+$('ul').eq(0).children()
+[<li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​, <li>​…​</li>​]
+$('ul').eq(0).children('[href=http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/]')
+Uncaught Error: Syntax error, unrecognized expression: [href=http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/](…)
+$('ul').eq(0).children('[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]')
+[]
+$('ul').eq(0).children(':nth(1)')
+[<li>​…​</li>​]
+$('ul').eq(0).children('a[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]')
+[]
+$('ul').eq(0).children().children('a[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]')
+[<a href=​"http:​/​/​www.vg.no/​rampelys/​hollywood/​cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/​a/​23533732/​">​Crawford til modelldatter:&nbsp; - Jeg vil ha bena mine tilbake!​</a>​]
+$('ul').eq(0).children().children('a[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]').text('inny');
+[<a href=​"http:​/​/​www.vg.no/​rampelys/​hollywood/​cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/​a/​23533732/​">​inny​</a>​]
+$('ul').eq(0).children().children('a[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]').attr('href', 'inny');
+[<a href=​"inny">​inny​</a>​]
+$('ul').eq(0).children().children('a[href="http://www.vg.no/rampelys/hollywood/cindy-crawford-til-modelldatteren-jeg-vil-ha-bena-mine-tilbake/a/23533732/"]').append('testujemy');
+[]
+$('ul').eq(0).children().children('a[href="inny"]').append('testujemy');
+[<a href=​"inny">​…​</a>​]
+$('ul').eq(0).children().children('a[href="inny"]').parent().append('testujemy');
+[<li>​…​</li>​]
+$('ul').eq(0).children().children('a[href="inny"]').parents().append('testujemy');
+[<li>​…​</li>​, <ul id=​"rss-feed">​…​</ul>​, <section class=​"example">​…​</section>​, <div id=​"app">​…​</div>​, <body>​…​</body>​, <html>​…​</html>​]
+$('ul').eq(0).children().children('a[href="inny"]').parents('section').append('koniec sekcji');
+[<section class=​"example">​…​</section>​]
+$('ul').eq(0).children().children('a[href="inny"]').parents('section').first().append('koniec sekcji');
+[<section class=​"example">​…​</section>​]

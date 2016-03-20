@@ -1,0 +1,54 @@
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      var result = [this.name];
+      for (var i = 0; i < students.length; i++) {
+        result.push(students[i].name);
+      }
+      return result.join(' ');
+
+//      return (this.name
+//        + ' '
+//        + students
+//              .map(function (s) { return s.name; })
+//              .join(' '));
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      var result = [this.name];
+      for (var i = 0; i < students.length; i++) {
+        result.push(students[i].name);
+      }
+      return result.join(' ');
+
+//      return (this.name
+//        + ' '
+//        + students
+//              .map(function (s) { return s.name; })
+//              .join(' '));
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}

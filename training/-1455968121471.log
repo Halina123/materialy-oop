@@ -1,0 +1,302 @@
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    this.Mike.partyWith(this.Rebecca);
+  }
+};
+PeopleStudents.party();
+Uncaught ReferenceError: PeopleStudents is not defined(…)
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    this.Mike.partyWith(this.Rebecca);
+  }
+};
+People.Students.party();
+undefined
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}Mike: ObjectRebecca: Objectparty: ()__proto__: Object
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+result
+"Mike Rebecca"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+result
+"Mike Rebecca"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return this.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+result
+" Rebecca"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return Mike.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Uncaught ReferenceError: Mike is not defined(…)
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(student) {
+      return People.Students.Mike.name + ' ' + student.name;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+
+  party: function () {
+    return this.Mike.partyWith(this.Rebecca);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object}
+result
+"Mike Rebecca"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      return;
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+undefined
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      return students
+              .map(function (s) { return s.name; })
+              .join(' ');
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+"Rebecca Tom"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      return this.name + students
+              .map(function (s) { return s.name; })
+              .join(' ');
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+"MikeRebecca Tom"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      return this.name + ' ' + students
+              .map(function (s) { return s.name; })
+              .join(' ');
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+"Mike Rebecca Tom"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      return (this.name 
+        + ' ' 
+        + students
+              .map(function (s) { return s.name; })
+              .join(' '));
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+"Mike Rebecca Tom"
+var People = People || {};
+People.Students = {
+  Mike: {
+    name: 'Mike', 
+    partyWith: function(students) {
+      var result = [this.name];
+      for (var i = 0; i < students.length; i++) {
+        result.push(students[i].name);
+      }
+      return result.join(' ');
+
+//      return (this.name
+//        + ' '
+//        + students
+//              .map(function (s) { return s.name; })
+//              .join(' '));
+    }
+  },
+  Rebecca: {name: 'Rebecca'},
+  Tom: {name: 'Tom'},
+
+  party: function () {
+    return this.Mike.partyWith([this.Rebecca, this.Tom]);
+  }
+};
+var result = People.Students.party();
+Object {Mike: Object, Rebecca: Object, Tom: Object}
+result
+"Mike Rebecca Tom"

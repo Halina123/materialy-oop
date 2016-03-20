@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery, AJAX, DOM</title>
+  <style>
+    body {
+      height: 6000px;
+      font-family: Helvetica, Arial;
+    }
+
+    #top-menu {
+      position: fixed;
+      z-index: 1;
+      background: #ccc;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    #top-menu li {
+      float: left;
+      list-style: none outside none;
+    }
+
+    #top-menu a {
+      display: block;
+      padding: 5px 25px 7px 25px;
+      width: 4em;
+      text-align: center;
+      -webkit-transition: .5s all ease-out;
+      -moz-transition: .5s all ease-out;
+      transition: .5s all ease-out;
+      border-top: 3px solid white;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    #top-menu a:hover {
+      color: #000;
+    }
+
+    #top-menu li.active a {
+      border-top: 3px solid #333;
+      color: #333;
+    }
+
+
+    section {
+    margin: 10px;
+    padding: 10px;
+    background: #369;
+    color: #fff;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+<ul id="top-menu">
+  <li>
+    <a href="#foo">Foo</a>
+  </li>
+  <li>
+    <a href="#bar">Bar</a>
+  </li>
+  <li>
+    <a href="#baz">Baz</a>
+  </li>
+  <li>
+    <a href="#kaboom">Kaboom</a>
+  </li>
+</ul>
+
+<div style="margin-top: 100px">
+  <section id="foo">Foo</section>
+  <section id="bar">Bar</section>
+  <section id="baz">Baz</section>
+</div>
+<script src="../vendor/jquery-2.1.4.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

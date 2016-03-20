@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery, AJAX, DOM</title>
+  <style>
+    .example {
+      border: 1px solid #ccc;
+      padding: 30px;
+      margin: 20px;
+    }
+  </style>
+
+  <script>
+    var config = {
+      quantityOfElements: 5,
+      power: 0
+    };
+  </script>
+</head>
+<body>
+<div id="app">
+  <section class="example">
+    <h2>RSS feed</h2>
+    <p id="rss-fetching-status"></p>
+    <ul id="rss-feed"></ul>
+  </section>
+
+  <section class="example">
+    <h2>Varnish</h2>
+
+    <p id="varnish-fetching-status"></p>
+
+    <section>
+      <h3>Top 5 hosts</h3>
+      <ul id="varnish-top-5-hosts"></ul>
+    </section>
+
+    <section>
+      <h3>Top 5 files</h3>
+      <ul id="varnish-top-5-files"></ul>
+    </section>
+
+    <section>
+      <h3>Top 5 IP addresses</h3>
+      <ul id="varnish-top-5-ipAddresses"></ul>
+    </section>
+
+    <section>
+      <h3>Top 5 Browsers</h3>
+      <ul id="varnish-top-5-browsers"></ul>
+    </section>
+
+  </section>
+
+  <section class="example">
+    <h2>JSON Feed</h2>
+
+    <p id="json-fetching-status"></p>
+    <ul id="json-feed"></ul>
+
+  </section>
+</div>
+<script src="../vendor/jquery-2.1.4.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

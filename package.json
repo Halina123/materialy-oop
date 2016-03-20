@@ -1,0 +1,28 @@
+{
+  "name": "jfdz-materialy-oop",
+  "version": "0.1.0",
+  "description": "JavaScript classes",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "test": "tape tests/sample.js",
+    "test-watched": "watch 'npm test' tests",
+    "build-docs": "watch 'cleaver docs/day-1.md' docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infoshareacademy/jfdz-materialy-oop"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Bartosz Cytrowski",
+  "license": "ISC",
+  "dependencies": {
+    "faucet": "0.0.1",
+    "tap": "^5.6.0",
+    "tape": "^4.4.0",
+    "watch": "^0.17.1",
+    "webpack": "^1.12.13"
+  }
+}

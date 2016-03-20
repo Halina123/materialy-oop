@@ -1,0 +1,83 @@
+<script>
+ var moves = {
+   rock: {
+     name: 'rock'
+   },
+   paper: {
+     name: 'paper'
+   },
+   scissors: {
+     name: 'scissors'
+   }
+ };
+
+ moves.rock.beats = moves.scissors;
+ moves.scissors.beats = moves.paper;
+ moves.paper.beats = moves.rock;
+
+ Array.prototype.zip = function (secondArray, callback) {
+   return this.map(function (firstArrayItem, index) {
+     return callback(firstArrayItem, secondArray[index]);
+   });
+ };
+
+ function zip(array1, array2, callback) {
+   return array1.map(function (array1Item, index) {
+     return callback(array1Item, array2[index]);
+   });
+ }
+
+ function whoWins(p1move, p2move) {
+   return p1move === p2move ? 'draw' : (p1move.beats === p2move ? 'p1 wins' : 'p2 wins');
+ }
+
+ function whoWins2(p1move, p2move) {
+   if (p1move === p2move) {
+     return 'draw';
+   } else if (p1move.beats === p2move) {
+     return 'p1 wins';
+   } else {
+     return 'p2 wins';
+   }
+ }
+
+ var p1 = [moves.rock, moves.paper, moves.paper];
+ var p2 = [moves.paper, moves.paper, moves.scissors];
+
+ function play(p1moves, p2moves) {
+   var result = p1moves.zip(p2moves, whoWins2);
+   result = zip(p1moves, p2moves, whoWins2);
+   return result;
+ }
+
+ var result = play(p1, p2);
+ var final = result.filter(function (item) {return item === 'p2 wins'}).length > result.filter(function (item) {return item === 'p1 wins'}).length ? 'p2 is the winner' : 'p1 is the winner';
+
+ var numbersA = [11, 35, 23, 40];
+ var numbersB = [3, 4, 8, 1];
+
+
+
+ var numbersResult = numbersA.zip(numbersB, function(a, b) {
+  return a - b;
+ });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
